@@ -1,6 +1,11 @@
 # COLM
 Pipelined lowlevel implementation of COLM for ARM-based systems
 
+Security Informtaion:
+COLM is an relatively new encryption algorithms. It participated in the CEASAR contenst. It has been verified and proofed for security.
+However, as COLM is only a few years only, security scientist haven't had the opportunity to verify those claims as extensivly as with older algorithms. Moreover, COLM has not been standardized (yet). Until then, I would recommend not using this algorithms for productive applications.
+Additionally, this implementation is provided as is. I will not take any responsibilities for any implementation bugs or algorithms errors.
+
 ## Overview
 COLM is an mode of operation of AES. It is one of the winners of the [ceasar competition for authenticated encryption algorithms](https://competitions.cr.yp.to/caesar.html).
 COLM is an authenticated encryption algorithms (like AES-GCM) with the advantave of nonce reuse resistance. That means that it security guarantees hold up even if the nove will be reused.
