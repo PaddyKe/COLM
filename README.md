@@ -34,7 +34,7 @@ To implement an effitient algorithms I made use of ARM neon - a vector extension
 
 Independent of the instantiation of COLM, I've made two differnt implementations. The first one is a regular implementaiton. The second one is is a parallelized implementaiton making use of the processor pipeline. The pipeline depths of ARM CPUs is three. That explaines why every instruction was repeated three times. This lead to an performance improvement of almost three times.
 
-The result of my COLM implementation can be found in my [bachelor theis](Thesis.pdf) (unfortunately only in german).
+The result of my COLM implementation can be found in my [bachelor thesis](Thesis.pdf) (unfortunately only in german).
 
 ## Link Collection regarding COLM
 - COLM paper: https://competitions.cr.yp.to/round3/colmv1.pdf
