@@ -17,19 +17,19 @@ Those intermediate taks can be used to detect manipulation to the ciphertext ear
 On contrast to that COLM0 or AES-GCM need to decrypti the message completely before the tag can be verified.
 
 ### More information on COLM
-- (Offitial Spec)[https://competitions.cr.yp.to/round3/colmv1.pdf]
-- (Security proofs of COLM)[https://competitions.cr.yp.to/round3/colm-addendum.pdf]
+- [Offitial Spec](https://competitions.cr.yp.to/round3/colmv1.pdf)
+- [Security proofs of COLM](https://competitions.cr.yp.to/round3/colm-addendum.pdf)
 
 
 ## Implementation
-The implementation of COLM took place in the context of a bachelor thesis at the [Philipps University of Marburg](https://uni-marburg.de) at the (department for computer science)[https://www.uni-marburg.de/de/fb12]. The target of the thesis was to evaluate recent cryptographic algorithms (this also contains other blockciphers, and algorithms to calculate message authentication codes) on ARM based systems.
+The implementation of COLM took place in the context of a bachelor thesis at the [Philipps University of Marburg](https://uni-marburg.de) at the [department for computer science](https://www.uni-marburg.de/de/fb12). The target of the thesis was to evaluate recent cryptographic algorithms (this also contains other blockciphers, and algorithms to calculate message authentication codes) on ARM based systems.
 
 To do that, I've implemented COLM (and the other algorithms) as effitient as possible and evaluated the performance. The performance of cryptographic algoithms can be compared using the number of cycles required to encrypt/decrypto/MAC one byte of data.
 To implement an effitient algorithms I made use of ARM neon - a vector extension of the ARM  standard which makes it possible to perform calcualations of (in this case) bytes at once.
 
 Independent of the instantiation of COLM, I've made two differnt implementations. The first one is a regular implementaiton. The second one is is a parallelized implementaiton making use of the processor pipeline. The pipeline depths of ARM CPUs is three. That explaines why every instruction was repeated three times. This lead to an performance improvement of almost three times.
 
-The result of my COLM implementation can be found in my (bachelor theis)[Thesis.pdf] (unfortunately only in german)
+The result of my COLM implementation can be found in my [bachelor theis](Thesis.pdf) (unfortunately only in german).
 
 ## Link Collection regarding COLM
 - COLM paper: https://competitions.cr.yp.to/round3/colmv1.pdf
