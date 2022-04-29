@@ -1,4 +1,4 @@
-# COLM
+# COLM - Authenticated Encryption Algorithm
 Pipelined low-level implementation of COLM for ARM-based systems
 
 Security informtaion:
