@@ -239,7 +239,7 @@ int8_t colm0_encrypt(uint8_t* message, uint64_t message_len, uint8_t* associated
 
 
 
-	// handyle remaining bytes
+	// handdle remaining bytes
 	memcpy(buf, in, remaining);
 	
 	delta_m = gf_mul7(delta_m);
@@ -273,7 +273,7 @@ int8_t colm0_encrypt(uint8_t* message, uint64_t message_len, uint8_t* associated
 	// if remaining == 0
 	if (remaining == 0) return 0;
 
-	// add checksum
+	// add tag
 	delta_m = gf_mul2(delta_m);
 	delta_c = gf_mul2(delta_c);
 
@@ -646,7 +646,7 @@ int8_t colm127_encrypt(uint8_t* message, uint64_t message_len, uint8_t* associat
 		iteration_counter++;
 	}
 
-	// handyle remaining bytes
+	// handle remaining bytes
 	memcpy(buf, in, remaining);
 	
 	delta_m = gf_mul7(delta_m);
