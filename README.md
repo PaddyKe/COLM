@@ -23,7 +23,7 @@ On contrast to that COLM0 or AES-GCM need to decrypti the message completely bef
 
 ### More information on COLM
 - [Offitial Spec](https://competitions.cr.yp.to/round3/colmv1.pdf)
-- [Security proofs of COLM](https://competitions.cr.yp.to/round3/colm-addendum.pdf)
+- [Security of COLM](https://competitions.cr.yp.to/round3/colm-addendum.pdf)
 
 
 ## Implementation
